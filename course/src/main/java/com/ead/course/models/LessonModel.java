@@ -37,7 +37,6 @@ public class LessonModel implements Serializable {
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @Fetch(FetchMode.SUBSELECT)
     private ModuleModel module;
 
     public UUID getLessonId() {
